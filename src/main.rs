@@ -48,7 +48,7 @@ fn add(master_key: &str) {
 
 fn show(master_key: &str) {
     if !std::path::Path::new("data.txt").exists() {
-        println!("Your don't have any data yet! Press '2' to add new item ");
+        println!("You don't have any data yet! Press '2' to add new item ");
         return;
     }
     let data = std::fs::read_to_string("data.txt").expect("Failed to load data");
